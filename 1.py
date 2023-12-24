@@ -6,8 +6,6 @@ df = pd.read_csv('stock_details_5_years.csv',sep=',')
 print(df.head(10))
 print(df.isnull().sum())
 
-
-# 假设数据集包含日期和股票价格两列，可以根据实际情况进行调整
 dates = pd.to_datetime(df['Date'])
 prices = df['High']
 
